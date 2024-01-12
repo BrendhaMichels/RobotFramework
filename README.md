@@ -1,6 +1,15 @@
 # RobotFramework
- 
-Aprendendo mais sobre Robot Framework para evolução profissional
+Robot Framework é implementado com Python, então você precisa ter o Python instalado.
+Download Python: https://www.python.org/downloads/
+
+Instalar o Robot Framework com pip:
+    pip install robotframework
+Para verificar se a instalação foi bem-sucedida, execute
+    robot --version
+
+Instalar SeleniumLibrary:
+    pip install --upgrade robotframework-seleniumlibrary
+SeleniumLibrary: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
 Palavras-chave (Keywords):
 As ações executadas pelo Robot Framework são representadas por palavras-chave. Essas palavras-chave podem ser pré-definidas (built-in) ou criadas pelo usuário.

@@ -1,84 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-12T16:01:11.389571" rpa="false" schemaversion="5">
-<suite id="s1" name="Form" source="D:\Dev\Robot\RobotFramework\RobotFramework\introduction\form.robot">
-<test id="s1-t1" name="Cenario 1: Preencher formulario" line="30">
-<kw name="Abrir Navegador e Acessar o Site">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-12T16:01:11.525904" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
-<arg>https://demoqa.com/text-box</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-12T16:01:11.525904" elapsed="11.711075"/>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-12T17:02:34.583519" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Ecommerce" source="D:\Dev\Robot\RobotFramework\RobotFramework\introduction\src_projects\ecommerce\tests\login_ecommerce.robot">
+<kw name="Abrir navegador" owner="session_rsc" type="SETUP">
+<msg time="2024-01-12T17:02:34.719054" level="FAIL">Variable '${URL_BASE}' not found.</msg>
+<arg>URL=${URL_BASE}</arg>
+<status status="FAIL" start="2024-01-12T17:02:34.718051" elapsed="0.001003">Variable '${URL_BASE}' not found.</status>
 </kw>
-<status status="PASS" start="2024-01-12T16:01:11.524905" elapsed="11.712074"/>
-</kw>
-<kw name="Preencher Campos">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-12T16:01:23.238980" level="INFO">Typing text 'Flavia' into text field 'id:userName'.</msg>
-<arg>${input_full_name}</arg>
-<arg>Flavia</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-12T16:01:23.237979" elapsed="0.110680"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-12T16:01:23.349659" level="INFO">Typing text 'flavia@ig.com.br' into text field 'id:userEmail'.</msg>
-<arg>${input_email}</arg>
-<arg>flavia@ig.com.br</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-12T16:01:23.348659" elapsed="0.063852"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-12T16:01:23.413511" level="INFO">Typing text 'Flavia' into text field 'id:currentAddress'.</msg>
-<arg>${input_current_address}</arg>
-<arg>Flavia</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-12T16:01:23.412511" elapsed="0.051670"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-12T16:01:23.465180" level="INFO">Typing text 'flavia@ig.com.br' into text field 'id:permanentAddress'.</msg>
-<arg>${input_permanent_address}</arg>
-<arg>flavia@ig.com.br</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-12T16:01:23.464181" elapsed="0.071834"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-01-12T16:01:26.537173" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-01-12T16:01:23.536015" elapsed="3.001158"/>
-</kw>
-<status status="PASS" start="2024-01-12T16:01:23.237979" elapsed="3.299194"/>
-</kw>
-<kw name="Clicar em Submit">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-01-12T16:01:26.538175" level="INFO">Clicking button 'id:submit'.</msg>
-<arg>${button_submit}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-12T16:01:26.537173" elapsed="0.044378"/>
-</kw>
-<status status="PASS" start="2024-01-12T16:01:26.537173" elapsed="0.044378"/>
-</kw>
-<kw name="Fechar Navegador">
+<test id="s1-t1" name="Teste de Login com sucesso" line="16">
+<status status="FAIL" start="2024-01-12T17:02:34.719054" elapsed="0.000000">Parent suite setup failed:
+Variable '${URL_BASE}' not found.</status>
+</test>
+<test id="s1-t2" name="Teste de Login sem sucesso" line="22">
+<status status="FAIL" start="2024-01-12T17:02:34.720055" elapsed="0.000000">Parent suite setup failed:
+Variable '${URL_BASE}' not found.</status>
+</test>
+<kw name="Fechar Navegador" owner="session_rsc" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-01-12T16:01:26.581551" elapsed="2.122727"/>
+<status status="PASS" start="2024-01-12T17:02:34.721063" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-01-12T16:01:26.581551" elapsed="2.122727"/>
+<status status="PASS" start="2024-01-12T17:02:34.721063" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-01-12T16:01:11.523896" elapsed="17.181387"/>
-</test>
-<status status="PASS" start="2024-01-12T16:01:11.390571" elapsed="17.314712"/>
+<status status="FAIL" start="2024-01-12T17:02:34.584519" elapsed="0.136544">Suite setup failed:
+Variable '${URL_BASE}' not found.</status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Form">Form</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="Login Ecommerce">Login Ecommerce</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-01-12T17:02:34.716223" level="WARN">Imported resource file 'D:\Dev\Robot\RobotFramework\RobotFramework\introduction\src_projects\ecommerce\data_driven\credenciais.robot' is empty.</msg>
 </errors>
 </robot>

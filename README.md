@@ -11,6 +11,23 @@ Instalar SeleniumLibrary:
     pip install --upgrade robotframework-seleniumlibrary
 SeleniumLibrary: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
+Conteúdo auxiliar para testes Web
+Site 1: https://demoqa.com
+Site 2: http://demostore.supersqa.com
+Site 3: https://ngendigital.com/practice
+
+
+
+Comando para não fechar o chrome:
+options=add_experimental_option("detach", True)
+
+Site auxiliar para seletores:
+XPath:
+https://www.w3schools.com/xml/xpath_syntax.asp
+
+CSS:
+https://www.w3schools.com/cssref/css_selectors.php
+
 Palavras-chave (Keywords):
 As ações executadas pelo Robot Framework são representadas por palavras-chave. Essas palavras-chave podem ser pré-definidas (built-in) ou criadas pelo usuário.
 Palavras-chave podem ser encadeadas para formar testes ou suítes de teste.
